@@ -58,6 +58,7 @@ body {
     margin-bottom: 20px;
     text-align: justify;
     text-indent: 5%;
+    font-weight: bolder;
   }
   
   .image-grid {
@@ -75,3 +76,18 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column; /* Stack navbar items on smaller screens */
+  }
+
+  .about-text {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .image-grid {
+      grid-template-columns: 1fr; /* Stack images on smaller screens */
+  }
+}

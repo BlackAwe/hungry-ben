@@ -112,3 +112,18 @@ body {
     .btn-secondary:hover {
         background-color: #a3836c;
     }
+
+    /* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack navbar items on smaller screens */
+    }
+
+    .summary-container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width on smaller screens */
+    }
+}

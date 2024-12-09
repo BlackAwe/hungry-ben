@@ -94,4 +94,15 @@ body {
   .bi {
     font-size: 1.2rem;
   }
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column; /* Stack navbar items on smaller screens */
+  }
+
+  .btn {
+      width: 100%; /* Make buttons full width on smaller screens */
+  }
+}
   

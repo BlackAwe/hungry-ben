@@ -111,6 +111,7 @@ body {
     .card {
         border-radius: 15px;
         overflow: hidden;
+        font-style: italic;
     }
 
     hr {
@@ -125,12 +126,13 @@ body {
   
     .card-body {
         background-color: #fff8e0;
+        font-style: italic;
     }
   
     .card-title {
         font-size: 1.2rem;
         color: #ff6600;
-        
+        font-style: italic;
     }
     
     .btn-outline-warning {
@@ -242,4 +244,19 @@ body {
           width: 100%;
         }
       }
+      /* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column; /* Stack navbar items on smaller screens */
+  }
+
+  .header img {
+      width: 80px; /* Adjust image size for smaller screens */
+      height: 80px;
+  }
+
+  .btn {
+      width: 100%; /* Make buttons full width on smaller screens */
+  }
+}
             

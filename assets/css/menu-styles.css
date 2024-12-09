@@ -143,4 +143,29 @@
     font-weight: bold;
     color: #333333;
   }
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column; /* Stack navbar items on smaller screens */
+  }
+
+  .menu-item {
+      flex-direction: column; /* Stack menu item details on smaller screens */
+      align-items: flex-start; /* Align items to the start */
+  }
+
+  .menu-item img {
+      width: 100%; /* Make images responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .menu-category {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .btn {
+      width: 100%; /* Make buttons full width on smaller screens */
+  }
+}
   

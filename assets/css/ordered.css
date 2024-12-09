@@ -138,3 +138,69 @@ body {
 .help-link a:hover {
   text-decoration: underline;
 }
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFAED; 
+  padding-top: 80px; 
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+}
+
+/* Button Hover Effect */
+.btn-orange {
+  background-color: #ff6600;
+  color: #ffffff;
+  border: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column; /* Stack navbar items on smaller screens */
+  }
+
+  .btn {
+      width: 100%; /* Make buttons full width on smaller screens */
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column; /* Stack navbar items on smaller screens */
+  }
+
+  .confirmation-container {
+      padding: 15px; 
+  }
+      .confirmation-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .summary-box {
+        padding: 10px; /* Reduce padding in summary box */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width on smaller screens */
+    }
+}

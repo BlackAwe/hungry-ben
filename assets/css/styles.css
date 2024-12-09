@@ -1,128 +1,160 @@
-* {
-  font-family: 'Quicksand', sans-serif;
-}
-  body {
-      font-family: Arial, sans-serif;
-      background-color: #FFFAED; 
-      padding-top: 80px; /* Prevent the navbar from overlapping content */
+    /* General Styles */
+    * {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #FFFAED;
+      padding-top: 80px;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      top: 0;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+    }
+
+    .icon-container {
+      margin: 0 3px; /* Reduced spacing between icons */
+      transition: transform 0.3s ease; /* Animation for hover effect */
+  }
+  
+  .icon {
+      font-size: 1.5rem; /* Set a consistent size for icons */
+      color: #ff6600; /* Set the color for icons */
+  }
+  
+  .icon-container:hover {
+      transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  }
+
+    .nav-link {
+      color: #333333;
+      font-weight: 500;
+      margin-right: 20px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+      color: #ff6600;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 20px; /* Adjust padding as needed */
+      background-color: #FFFAED; /* Background color */
+      text-align: left; /* Align text to the left */
+      margin-top: -10px;
+    }
+
+    .header-text h1 {
+      font-size: 3rem; /* Adjust the size as needed */
+      font-weight: bold; /* Make the font bold */
+    }
+
+    .header-image {
+      margin-left: auto; /* Push the image to the far right */
     }
     
-  /* Navbar Styles */
-  .navbar {
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Floating shadow effect */
-    position: fixed; /* Fixed positioning to float */
-    width: 100%;
-    z-index: 10; /* Ensure it stays above other elements */
-    top: 0;
-  }
-
-  .logo{
-    width: 60px;
-    height: 60px;
-    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15))
-  }
-
-  /* Navbar Links */
-  .nav-link {
-    color: #333333;
-    font-weight: 500;
-    margin-right: 20px;
-    transition: color 0.3s ease;
-    font-size: 18px;
-  }
-
-  .nav-link.active,
-  .nav-link:hover {
-    color: #ff6600;
-  }
-
-  /* Button Hover Effect */
-  .btn-orange {
-    background-color: #ff6600;
-    color: #ffffff;
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  }
-
-  .btn-orange:hover {
-    background-color: #e65500;
-    transform: scale(1.1); /* Slight zoom effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add hover shadow */
-  }
-
-  /* Outline Button Hover Effect */
-  .btn-outline-orange {
-    color: #ff6600;
-    border: 2px solid #ff6600;
-    font-weight: bold;
-    background-color: transparent;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .btn-outline-orange:hover {
-    background-color: #ff6600;
-    color: #ffffff;
-    transform: scale(1.1); /* Slight zoom effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add hover shadow */
-  }
-
-  .text-orange {
-    color: #ff6600;
-    text-shadow:3px 3px 2px #000,
-  }
+    .header-text {
+        max-width: 60%; /* Limit the width of the text */
+    }
   
-  .btn-orange {
-    background-color: #ff6600;
-    color: #ffffff;
-    border: none;
-    margin-right: 75%;
-  }
-  
-  .btn-orange:hover {
-    background-color: #e65500;
+  /* Hide header image on smaller screens */
+  @media (max-width: 768px) {
+    .header-image {
+        display: none; /* Hide the header image */
+    }
+
+    .header {
+        padding-top: 10px; /* Adjust padding to reduce space */
+    }
   }
 
-  .display-5{
-    margin-right: 60%;
-  }
-  
-  .mb-4{
-    font-weight: bold;
-    color:#AE4202;
+  /* Optional: Adjust the header padding for larger screens if needed */
+  .header {
+    padding-top: 10px; /* Adjust this value as needed */
   }
 
-  .popular-meals .card {
-    background-color: #ffecd6;
-    border: none;
-    border-radius: 30px;
-  }
+    /* Popular Meals */
+    .popular-meals {
+      padding: 10px 0;
+    }
 
-  .card-img-top{
-    width: 200px;
-    height: 200px;
-    margin-left: 40px;
-  }
-  
-  .popular-meals .card-title {
-    color: #333333;
-    font-weight:  bolder;
-    font-style: italic;
-  }
-  
-  .popular-meals .price {
-    color: #ff6600;
-    font-weight: bold;
-  }
-  
-  .btn-outline-orange {
-    color: #ff6600;
-    border: 2px solid #ff6600;
-    font-weight: bold;
-  }
-  
-  .btn-outline-orange:hover {
-    background-color: #ff6600;
-    color: #ffffff;
-  }
-  
+    .popular-meals h2 {
+      color: #AE4202;
+      font-weight: bold;
+    }
+
+    .popular-meals .card {
+      border: none;
+      border-radius: 15px;
+      background-color: #ffecd6;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .popular-meals .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .popular-meals .card-title {
+      color: #333333;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .popular-meals .price {
+      color: #ff6600;
+      font-weight: bold;
+    }
+
+    .btn-orange {
+      background-color: #ff6600;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 10px 20px; /* Adjust padding as needed */
+      white-space: nowrap; /* Prevent text wrapping */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+    .btn-orange:hover {
+        background-color: #e65500;
+        transform: scale(1.1); /* Slight zoom effect */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add hover shadow */
+    }
+
+    /* Outline Button Hover Effect */
+    .btn-outline-orange {
+        color: #ff6600;
+        border: 2px solid #ff6600;
+        font-weight: bold;
+        background-color: transparent;
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-outline-orange:hover {
+        background-color: #ff6600;
+        color: #ffffff;
+        transform: scale(1.1); /* Slight zoom effect */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add hover shadow */
+    }

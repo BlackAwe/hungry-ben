@@ -118,4 +118,23 @@ body {
   .mb-4{
     text-align: center;
   }
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column; /* Stack navbar items on smaller screens */
+  }
+
+  .payment-section {
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .summary-section {
+      padding: 15px; /* Adjust padding for summary section */
+  }
+
+  .btn {
+      width: 100%; /* Make buttons full width on smaller screens */
+  }
+}
   
