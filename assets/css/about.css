@@ -1,0 +1,77 @@
+/* General Styles */
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFAED;
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+  }
+  
+  .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-right: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link.active,
+  .nav-link:hover {
+    color: #ff6600;
+  }
+  
+  .text-orange {
+    color: #ff6600;
+  }
+  
+  .btn-orange {
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .btn-orange:hover {
+    background-color: #e65500;
+    transform: scale(1.1);
+  }
+  
+  /* About Section */
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 5%;
+  }
+  
+  .image-grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    top: -50px;
+    left: 100px;
+  }
+  
+  .image-grid img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }

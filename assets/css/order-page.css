@@ -1,0 +1,245 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFAED; 
+    padding-top: 80px; /* Prevent the navbar from overlapping content */
+    }
+    
+    /* Navbar Styles */
+    .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Floating shadow effect */
+    position: fixed; /* Fixed positioning to float */
+    width: 100%;
+    z-index: 10; /* Ensure it stays above other elements */
+    top: 0;
+    }
+
+    .logo{
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15))
+    }
+
+    /* Navbar Links */
+    .nav-link {
+        color: #333333;
+        font-weight: 500;
+        margin-right: 20px;
+        transition: color 0.3s ease;
+        font-size: 18px;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+        color: #ff6600;
+    } 
+
+    .icon-container {
+        margin: 0 3px; /* Reduced spacing between icons */
+        transition: transform 0.3s ease; /* Animation for hover effect */
+    }
+    
+    .icon {
+        font-size: 1.5rem; /* Set a consistent size for icons */
+        color: #ff6600; /* Set the color for icons */
+    }
+    
+    .icon-container:hover {
+        transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    }
+
+    /* Button Hover Effect */
+    .btn-orange {
+        background-color: #ff6600;
+        color: #ffffff;
+        border: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn-orange:hover {
+        background-color: #e65500;
+        transform: scale(1.1); /* Slight zoom effect */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add hover shadow */
+    }
+
+    /* Outline Button Hover Effect */
+    .btn-outline-orange {
+        color: #ff6600;
+        border: 2px solid #ff6600;
+        font-weight: bold;
+        background-color: transparent;
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-outline-orange:hover {
+        background-color: #ff6600;
+        color: #ffffff;
+        transform: scale(1.1); /* Slight zoom effect */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add hover shadow */
+    }
+
+    .container h1 {
+        color: #3333; /* Orange for the heading */
+    }
+      
+    .container p {
+        color: #6c757d; /* Gray for the tagline */
+    }
+
+    .header{
+        background-color: #AE4202;
+    }
+
+    .rounded-circle{
+        width: 300px;
+        height: 300px;
+    }
+
+    .header img {
+        border-radius: 50%;
+        background-color: #FFFAED; 
+    }
+
+    img {
+        object-fit: cover;
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15))
+    }
+  
+    .card {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    hr {
+        color: #AE4202;
+        border-width: 2px
+    }
+
+    .mb-4{
+        font-weight: bold;
+        color:#AE4202;
+    }
+  
+    .card-body {
+        background-color: #fff8e0;
+    }
+  
+    .card-title {
+        font-size: 1.2rem;
+        color: #ff6600;
+        
+    }
+    
+    .btn-outline-warning {
+        border: 2px solid #ff6600;
+        color: #ff6600;
+    }
+
+    .card-img-top{
+        width: 200px;
+        height: 200px;
+        margin-left: 30px;
+    }
+
+    .cart-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 400px;
+        height: 100%;
+        background-color: #fff8e1;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .cart-overlay.d-none {
+        transform: translateX(100%);
+      }
+      
+      .cart-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      
+      .cart-header {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      
+      .cart-header i {
+        cursor: pointer;
+      }
+      
+      .cart-footer {
+        margin-top: auto;
+      }
+      
+      #cart-items {
+        flex-grow: 1;
+        overflow-y: auto;
+      }
+      
+      #cart-items li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .cart-header i {
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      
+      #cart-items li {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      
+      #cart-items li img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+      
+      .quantity-control {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+      }
+      
+      .quantity-control button {
+        background: #ddd;
+        border: none;
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        cursor: pointer;
+      }
+      
+      .quantity-control input {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #ccc;
+        margin: 0 5px;
+      }
+      
+      
+      @media (max-width: 768px) {
+        .cart-overlay {
+          width: 100%;
+        }
+      }
+            

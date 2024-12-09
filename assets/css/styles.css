@@ -1,0 +1,128 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #FFFAED; 
+      padding-top: 80px; /* Prevent the navbar from overlapping content */
+    }
+    
+  /* Navbar Styles */
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Floating shadow effect */
+    position: fixed; /* Fixed positioning to float */
+    width: 100%;
+    z-index: 10; /* Ensure it stays above other elements */
+    top: 0;
+  }
+
+  .logo{
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15))
+  }
+
+  /* Navbar Links */
+  .nav-link {
+    color: #333333;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    font-size: 18px;
+  }
+
+  .nav-link.active,
+  .nav-link:hover {
+    color: #ff6600;
+  }
+
+  /* Button Hover Effect */
+  .btn-orange {
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  .btn-orange:hover {
+    background-color: #e65500;
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add hover shadow */
+  }
+
+  /* Outline Button Hover Effect */
+  .btn-outline-orange {
+    color: #ff6600;
+    border: 2px solid #ff6600;
+    font-weight: bold;
+    background-color: transparent;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .btn-outline-orange:hover {
+    background-color: #ff6600;
+    color: #ffffff;
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add hover shadow */
+  }
+
+  .text-orange {
+    color: #ff6600;
+    text-shadow:3px 3px 2px #000,
+  }
+  
+  .btn-orange {
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
+    margin-right: 75%;
+  }
+  
+  .btn-orange:hover {
+    background-color: #e65500;
+  }
+
+  .display-5{
+    margin-right: 60%;
+  }
+  
+  .mb-4{
+    font-weight: bold;
+    color:#AE4202;
+  }
+
+  .popular-meals .card {
+    background-color: #ffecd6;
+    border: none;
+    border-radius: 30px;
+  }
+
+  .card-img-top{
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+  }
+  
+  .popular-meals .card-title {
+    color: #333333;
+    font-weight:  bolder;
+    font-style: italic;
+  }
+  
+  .popular-meals .price {
+    color: #ff6600;
+    font-weight: bold;
+  }
+  
+  .btn-outline-orange {
+    color: #ff6600;
+    border: 2px solid #ff6600;
+    font-weight: bold;
+  }
+  
+  .btn-outline-orange:hover {
+    background-color: #ff6600;
+    color: #ffffff;
+  }
+  

@@ -1,0 +1,115 @@
+/* General Styles */
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFAED;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+  
+  .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-right: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link.active,
+  .nav-link:hover {
+    color: #ff6600;
+  }
+
+.logo {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+}
+
+.text-orange {
+  color: #ff6600;
+}
+
+.btn-orange {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #FFF3E0;
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ffc107;
+}
+
+.profile-img-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 1.2rem;
+  background: #ff6600;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.update-text {
+  color: #888;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.profile-details {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.profile-details hr {
+  margin: 10px 0;
+}
+
+.buttons .btn {
+  width: 100px;
+  border-radius: 20px;
+}
+.food-img {
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+    top: -125px;
+    right:750px;
+  }  

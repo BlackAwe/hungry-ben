@@ -1,0 +1,80 @@
+/* General Styles */
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFAED;
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+  }
+  
+  .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-right: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link.active,
+  .nav-link:hover {
+    color: #ff6600;
+  }
+  
+  /* Feedback Form */
+  .feedback-form {
+    position: relative;
+    top: -25px;
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-form .form-label {
+    font-weight: bold;
+  }
+  
+  .feedback-input {
+    border: 1px solid #9a9a9a;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .feedback-input:focus {
+    border-color: #4976b1;
+    box-shadow: 0 0 10px rgba(77, 124, 178, 1);
+  }
+  
+  .text-orange {
+    color: #ff6600;
+  }
+  .form-label.text-orange {
+    color: #3e3e3e;
+    font-weight: 100;
+  }
+  .btn-orange {
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-orange:hover {
+    background-color: #e65500;
+    transform: scale(1.05);
+  }  
